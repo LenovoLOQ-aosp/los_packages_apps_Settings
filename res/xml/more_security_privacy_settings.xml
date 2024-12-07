@@ -230,6 +230,10 @@
         android:fragment="com.android.settings.security.MemtagPage"
         settings:controller="com.android.settings.security.MemtagPagePreferenceController" />
 
-
+        <Preference
+            android:key="hide_applist_setting"
+            android:title="@string/hide_applist_title"
+            android:summary="@string/hide_applist_summary"
+            android:fragment="com.android.settings.custom.privacy.HideAppListSettings" />
 
 </PreferenceScreen>
