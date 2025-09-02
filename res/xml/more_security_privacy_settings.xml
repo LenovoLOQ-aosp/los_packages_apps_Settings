@@ -197,6 +197,13 @@
 
     </Preference>
 
+    <com.android.settings.security.KeyboxDataPreference
+        android:order="253"
+        android:key="keybox_data_setting"
+        android:title="@string/keybox_data_title"
+        android:summary="@string/keybox_data_summary"
+        android:defaultValue=""/>
+
     <Preference
         android:order="260"
         android:key="encryption_and_credential"
