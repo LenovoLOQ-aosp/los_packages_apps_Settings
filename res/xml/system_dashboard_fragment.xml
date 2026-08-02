@@ -180,4 +180,12 @@
             settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
     </PreferenceCategory>
+
+    <!-- Spoofing Settings -->
+    <Preference
+        android:key="spoof_settings"
+        android:title="@string/spoof_settings_title"
+        android:icon="@drawable/ic_spoof_settings"
+        android:order="-25"
+        android:fragment="com.android.settings.custom.spoofing.SpoofSettings"/>
 </PreferenceScreen>
