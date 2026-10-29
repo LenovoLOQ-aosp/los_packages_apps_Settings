@@ -17,7 +17,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.preference.Preference
 import androidx.preference.SwitchPreferenceCompat
-import com.android.internal.logging.nano.MetricsProto
+import android.app.settings.SettingsEnums
 import com.android.settings.R
 import com.android.settings.SettingsPreferenceFragment
 import java.io.File
@@ -53,7 +53,7 @@ class TeeSimulatorSettings : SettingsPreferenceFragment() {
         bindPreferences()
     }
 
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.CUSTOM
+    override fun getMetricsCategory(): Int = SettingsEnums.SETTINGS_SYSTEM_CATEGORY
 
     private fun bindPreferences() {
         val enablePref = findPreference<SwitchPreferenceCompat>(KEY_ENABLED)

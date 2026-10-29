@@ -65,4 +65,5 @@
     <string name="tee_simulator_targets_imported">Target list imported</string>
     <string name="tee_simulator_title">TEE Simulator</string>
     <string name="system_spoof_title">System spoof</string>
+    <string name="pif_delete_content_description">Clear PIF data</string>
 </resources>
