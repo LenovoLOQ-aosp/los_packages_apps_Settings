@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen 
+<!--
+     SPDX-FileCopyrightText: 2026 Neoteric OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="spoofing_settings"
     android:title="@string/spoof_settings_title">
 
-    <!-- System Spoofing Category -->
+    <!-- Integrity & Attestation -->
     <PreferenceCategory
         android:key="system_spoof_category"
         android:title="@string/system_spoof_title">
@@ -23,43 +27,6 @@
             android:title="@string/tee_simulator_title"
             android:summary="@string/tee_simulator_summary"
             android:fragment="com.android.settings.custom.spoofing.TeeSimulatorSettings" />
-
-        <!-- App Spoofing -->
-        <Preference
-            android:key="user_selectable_app_spoofing"
-            android:title="@string/user_selectable_app_spoofing_title"
-            android:summary="@string/user_selectable_app_spoofing_summary"
-            android:fragment="com.android.settings.system.spoofing.UserSelectedAppSpoofSettings" />
-    </PreferenceCategory>
-
-    <!-- Miscellaneous Category -->
-    <PreferenceCategory
-        android:key="miscellaneous_category"
-        android:title="@string/miscellaneous_title">
-
-        <SwitchPreferenceCompat
-            android:key="gphotos_spoof"
-            android:title="@string/gphotos_spoof_title"
-            android:summary="@string/gphotos_spoof_summary"
-            android:defaultValue="true" />
-
-        <SwitchPreferenceCompat
-            android:key="pi_tensor_spoof"
-            android:title="@string/pi_tensor_spoof_title"
-            android:summary="@string/pi_tensor_spoof_summary"
-            android:defaultValue="false" />
-
-        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
-            android:key="window_ignore_secure"
-            android:title="@string/ignore_window_secure_title"
-            android:summary="@string/ignore_window_secure_summary"
-            android:defaultValue="false"/>
-
-        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
-            android:key="pm_downgrade_allowed"
-            android:title="@string/app_downgrade_title"
-            android:summary="@string/app_downgrade_summary"
-            android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
